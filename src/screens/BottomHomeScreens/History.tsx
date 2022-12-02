@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
-import { Text, View, Image , StyleSheet, FlatList} from 'react-native'
+import { Text, View, Image , StyleSheet, FlatList, StatusBar} from 'react-native'
 import Constants from 'expo-constants';
 import AccountIcon from '../../icons/AccountIcon'
 import HistoryItem from '../../components/ListItem/HistoryItem';
+import Feather from 'react-native-vector-icons/Feather' 
 
 let imag= require('../../../assets/female.png' )
 
@@ -81,7 +82,8 @@ const History = () => {
         <Text style={styles.text_ealier1}>Today</Text>
        </View>
        <View>
-       <Image source={require('../../../assets/filterIcon.png')}/>
+        <Feather name='filter' size={20} color={'#ffffff'}/>
+       
        </View>
       </View>
       <View style={styles.today}>
@@ -113,10 +115,11 @@ const History = () => {
 }
 const styles = StyleSheet.create({
   main:{
-   width:"100%",
-   height:'100%',
-   display:'flex',
-   padding:20
+    height:'100%',
+    marginTop: StatusBar.currentHeight,
+    padding:"5%",
+    backgroundColor:'#000000'
+
   },
   flex1:{
     display:'flex',
@@ -141,7 +144,7 @@ const styles = StyleSheet.create({
     marginTop:30,
     fontSize:16,
     fontWeight:'600',
-    color:'#333333'
+    color:'#ffffff'
 
 
   },
@@ -149,7 +152,7 @@ const styles = StyleSheet.create({
    
     fontSize:16,
     fontWeight:'600',
-    color:'#333333'
+    color:'#ffffff'
 
 
   }

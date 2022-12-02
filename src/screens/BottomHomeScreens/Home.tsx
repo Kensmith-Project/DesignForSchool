@@ -98,9 +98,9 @@ const Home = (props: Props) => {
        
 
          <View style={styles.layers1}>
-            <CardStack imag={<VoiceScan/>} title='Scan to Pay'  onPress={navigateToQrScanCode}/>
-            <CardStack imag={<WalletCard/>} title='Topup Transport Wallet' />
-            <CardStack imag={<DollarBag/>} title='Get Transport Loan' />
+            <CardStack imag={<VoiceScan/>} title='Scan to Pay'  onPress={ NavigateToBookFlight}/>
+            <CardStack imag={<WalletCard/>} title='Topup Transport Wallet'onPress={ NavigateToBookFlight} />
+            <CardStack imag={<DollarBag/>} title='Get Transport Loan' onPress={ NavigateToBookFlight}/>
 
 
           </View>
@@ -122,7 +122,7 @@ const Home = (props: Props) => {
           <View style={styles.backdiv}>
           {/* <ImageBackground source={require('../../../assets/halfcutimage.png')} resizeMode="cover"  style={styles.backImag}> */}
           <BackItem/>
-          <TouchableOpacity style={styles.floatingButton} onPress={navigate}>
+          <TouchableOpacity style={styles.floatingButton} >
         <View>
           <Feather name='plus' size={25} color='#FCFCFC'/>
         </View>

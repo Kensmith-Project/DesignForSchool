@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useState } from 'react';
-import { Text, View, Image , StyleSheet, FlatList, TouchableOpacity} from 'react-native'
+import { Text, View, Image , StyleSheet, FlatList, TouchableOpacity, StatusBar} from 'react-native'
 import Constants from 'expo-constants';
 import Octicons from 'react-native-vector-icons/Octicons'
 import IonIcons from 'react-native-vector-icons/Ionicons'
@@ -16,44 +16,44 @@ const DATA1 = [
   {
     id: "1",
     title:'Edit Profile',
-   imag: <IonIcons name='person' color={'#4F4F4F'} size={22}/>
+   imag: <IonIcons name='person' color={'#ffffff'} size={22}/>
    
   },
   {
     id: "2",
     title:'Change PIN',
-    imag:<Octicons name='lock' color={'#4F4F4F'} size={22}/>,
+    imag:<Octicons name='lock' color={'#ffffff'} size={22}/>,
    
   },
 
   {
     id: "3",
     title:'Notification',
-    imag:<Feather name='bell' color={'#4F4F4F'} size={22}/>,
+    imag:<Feather name='bell' color={'#ffffff'} size={22}/>,
    
   },
   {
     id: "4",
     title:'History',
-    imag:<Entypo name='wallet' color={'#4F4F4F'} size={22}/>,
+    imag:<Entypo name='wallet' color={'#ffffff'}size={22}/>,
    
   },
   {
     id: "5",
     title:'Kyc Registration',
-    imag:<MaterialCommunityIcon name='clock-time-twelve-outline' color={'#4F4F4F'} size={22}/>,
+    imag:<MaterialCommunityIcon name='clock-time-twelve-outline' color={'#ffffff'} size={22}/>,
    
   },
   {
     id: "6",
     title:'Settings',
-    imag:<Feather name='settings' color={'#4F4F4F'} size={22}/>,
+    imag:<Feather name='settings' color={'#ffffff'} size={22}/>,
    
   },
   {
     id: "7",
     title:'QR Code',
-    imag:<MaterialIcons name='qr-code-scanner' color={'#4F4F4F'} size={22}/>,
+    imag:<MaterialIcons name='qr-code-scanner' color={'#ffffff'}size={22}/>,
    
   },
 
@@ -108,10 +108,10 @@ const Profile = () => {
 
 const styles = StyleSheet.create({
   main:{
-   width:"100%",
-   height:'100%',
-   display:'flex',
-   padding:20
+    height:'100%',
+    marginTop: StatusBar.currentHeight,
+    padding:"5%",
+    backgroundColor:'#000000'
   },
   flex1:{
     display:'flex',
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     marginTop:30,
     fontSize:16,
     fontWeight:'600',
-    color:'#333333'
+    color:'#ffffff',
 
 
   },
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
 
   },
   miriam:{
-    color:' #333333',
+    color:'#ffffff',
     fontSize:18,
     fontWeight:'600',
     display:'flex',
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
   agent:{
     fontSize:14,
     fontWeight:'500',
-    color:'#333333',
+    color:'#ffffff',
     fontStyle:'normal',
     lineHeight:21,
     marginTop:5

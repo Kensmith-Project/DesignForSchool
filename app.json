@@ -1,4 +1,5 @@
 {
+  
   "expo": {
     "name": "Customer-Sanwo-App",
     "slug": "Customer-Sanwo-App",
@@ -18,14 +19,19 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier":"com.yossiglass.template",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.yossiglass.template",
+      
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
+      
     },
+    
     "web": {
       "favicon": "./assets/favicon.png"
     }

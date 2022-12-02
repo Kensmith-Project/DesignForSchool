@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         marginLeft:15,
         fontSize:16,
        fontWeight:'400',
-       color:'#4F4F4F'
+       color:'#ffffff'
        
         
         
