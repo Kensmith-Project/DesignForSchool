@@ -24,7 +24,7 @@ const HomeStack = () => {
       />
 
       <Stack.Screen
-        name="Home"
+        name="ome"
         component={Home}
         options={{
           headerShown: false,

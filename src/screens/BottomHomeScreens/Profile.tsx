@@ -62,7 +62,7 @@ const DATA1 = [
 const Profile = () => {
 
   const [selectedId, setSelectedId] = useState(null);
-  const renderItem = ({ item }) => {
+  const renderItem = ({ item }:any) => {
     const backgroundColor = item.id === selectedId ? "#6e3b6e" : "#f9c2ff";
     const color = item.id === selectedId ? 'white' : 'black';
    
